@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu hỏi tình cảm</title>
+    <link rel="stylesheet" href="questions.css"> <!-- Kết nối CSS -->
+</head>
+<body>
+    <div class="question-box" id="question-box">
+        <h2 id="question-text">Loại tình cảm mà bạn đang kiếm?</h2>
+        <div class="answer-buttons">
+            <button onclick="nextQuestion(0)">Lãng mạn</button>
+            <button onclick="nextQuestion(1)">Bạn thân</button>
+            <button onclick="nextQuestion(2)">Thoáng qua</button>
+            <button onclick="nextQuestion(3)">Chưa biết</button>
+        </div>
+    </div>
+
+    <!-- Hộp thoại thông báo -->
+    <div class="result-box" id="result-box">
+        <img src="https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/05/anh-meme-meo-2.jpg" alt="Cute Cat">
+        <p>Chúc mừng! Bạn đã tìm được một người bạn trai phù hợp 💖</p>
+        <button onclick="goToWelcome()">OK</button>
+    </div>
+
+    <script src="questions.js"></script> <!-- Kết nối JavaScript -->
+</body>
+</html>

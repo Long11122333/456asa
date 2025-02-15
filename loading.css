@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/08/hinh-nen-lap-top-cute-34.jpg.webp') no-repeat center center/cover;
+}
+
+/* Thanh loading */
+.loading-container {
+    width: 80%;
+    max-width: 600px;
+    height: 20px;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.loading-bar {
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right, #ff7eb3, #ff4f88);
+    transition: width 10s linear;
+}
+
+/* Hộp thoại */
+.popup {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.popup p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Nút */
+.btn {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-yes {
+    background-color: #ff7eb3;
+    color: white;
+}
+
+.btn-no {
+    background-color: #ddd;
+}

@@ -1,0 +1,128 @@
+/* Thiết lập chung */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://m.yodycdn.com/blog/anh-chill-buon-yodyvn43.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-in-out;
+    position: relative;
+}
+
+/* Hiệu ứng fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hộp Welcome */
+.popup {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 60px; /* Tăng padding để hộp lớn hơn */
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    width: 600px; /* Gấp đôi kích thước */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+/* Ảnh mèo */
+.popup img {
+    width: 300px; /* Gấp đôi kích thước */
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Nút OK và Back */
+#ok-btn, #back-btn {
+    font-size: 22px;
+    padding: 12px 30px;
+    border-radius: 12px;
+    background-color: #ff7eb3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(255, 126, 179, 0.5);
+}
+
+#ok-btn:hover, #back-btn:hover {
+    background-color: #ff4f88;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 126, 179, 0.8);
+}
+
+/* CV Container */
+.cv-container {
+    background: rgba(255, 255, 255, 0.9);
+    max-width: 700px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+/* Tiêu đề */
+h1, h2 {
+    color: #333;
+    transition: transform 0.3s ease-in-out;
+}
+
+h1:hover, h2:hover {
+    transform: scale(1.1);
+}
+
+/* Danh sách */
+ul {
+    text-align: left;
+    list-style-type: "💖 ";
+    padding-left: 20px;
+}
+
+/* Nút Chấp Nhận */
+.accept-btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 20px;
+    border: none;
+    background: linear-gradient(45deg, #ff4da6, #ff85a2);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(255, 77, 166, 0.6);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.accept-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(255, 77, 166, 1);
+}
+
+/* Hiệu ứng lấp lánh nền */
+@keyframes sparkle {
+    0% { opacity: 0.3; transform: translateY(0); }
+    50% { opacity: 1; transform: translateY(-10px); }
+    100% { opacity: 0.3; transform: translateY(0); }
+}
+
+.sparkle {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 8px white;
+    animation: sparkle 2s infinite ease-in-out alternate;
+}
